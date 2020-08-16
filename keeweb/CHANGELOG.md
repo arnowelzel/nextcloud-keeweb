@@ -1,3 +1,29 @@
+nextcloud-keeweb (0.6.2)
+* Include service-worker.js
+* Fixup history cleanup script
+
+nextcloud-keeweb (0.6.1)
+* Improve PHP short tags workaround
+
+nextcloud-keeweb (0.6.0)
+* Support Nextcloud 17 & 18
+* Bundle Keeweb 1.12.3
+* Improve mimetype hooks (thanks @kesselb)
+* Ensure being able to open files from history (thanks @HolgerHees)
+* Ensure custom config is always loaded (thanks @maurerle)
+* Ensure downloading attachments works (thanks @tiaga)
+
+nextcloud-keeweb (0.5.1)
+* Support Nextcloud 16
+* Bundle Keeweb 1.8.2
+* Fix CSP error when loading Keeweb plugins
+
+nextcloud-keeweb (0.5.0)
+* Support Nextcloud 15
+* Bundle Keeweb 1.7.7
+* Hopefully fix CSP issues
+* Pay attention to readme for a guide on how to make this work properly!
+
 nextcloud-keeweb (0.4.0)
 * Support Nextcloud 12
 * Bundle Keeweb 1.5.0

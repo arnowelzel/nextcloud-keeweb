@@ -4,6 +4,7 @@
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
  *
+ * @author Holger Hees <holger.hees@gmail.com>
  * @author Jonne Haß <me@jhass.eu>
  * @copyright Jonne Haß 2016
  */
@@ -43,10 +44,11 @@
       return true;
     });
 
+    fileInfos = fileInfos.map(function(fileInfo) {
+      fileInfo.path = fileInfo.path.replace(/requesttoken=[^&]+/,"requesttoken=" + encodeURIComponent(OC.requestToken));
+      return fileInfo;
+    });
+
     localStorage.fileInfo = JSON.stringify(fileInfos);
   }
-
-  $(document).ready(function () {
-
-  });
 })(jQuery, OC);
